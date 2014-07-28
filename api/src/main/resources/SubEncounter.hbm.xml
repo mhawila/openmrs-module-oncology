@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.openmrs.module.oncologypoc.api">
+
+	<class name="SubEncounter" table="oncologypoc_subencounter">
+		<id name="subEncounterId" type="int" column="sub_encounter_id" unsaved-value="0">
+			<generator class="native"/></id>
+		<discriminator column="sub_encounter_id" insert="false"/>
+		
+		<property name="encounterId" type="int" column="encounter_id"/>
+	</class>
+</hibernate-mapping>
+

@@ -1,0 +1,73 @@
+.content-div {
+	border: 1px solid #CCCCCC;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.left-nav-div {
+	font-size: 0;
+	border-right: 3px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	overflow: hidden;
+	float: left;
+	width: 270px;
+	height: 330px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
+	background: -moz-linear-gradient(top, #FFFFFF 30%, #cccccc 100%);
+	background: -o-linear-gradient(top, #FFFFFF 30%, #cccccc 100%);
+	background: -ms-linear-gradient(top, #FFFFFF 30%, #cccccc 100%);
+	background: linear-gradient(top, #FFFFFF 30%, #cccccc 100%);
+}
+
+.left-nav-div a {
+	text-align: left;
+	vertical-align: middle;
+	padding: 40px 0 40px 60px;
+	height: 100%;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	position: relative;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+	box-shadow: 8px 0px 20px 2px #CCCCCC;
+}
+
+.left-nav-div a.current, .left-nav-div a:link.current, .left-nav-div a:visited.current, .left-nav-div a.current:hover {
+	/* Fall back for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0) transparent;
+	/* RGBa with 0.19 opacity */
+	background: rgba(0, 0, 0, 0.19);
+	/* For IE 5.5 - 7*/
+	filter: progid : DXImageTransform.Microsoft.gradient ( startColorstr = #99000000, endColorstr = #99000000 );
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border-top-left-radius: 10px 10px;
+	border-bottom-left-radius: 10px 10px;
+	text-decoration: none;
+}
+
+.left-nav-div a:hover,.left-nav-div a:focus {
+	/* Fall back for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0) transparent;
+	/* RGBa with 0.19 opacity */
+	background: rgba(0, 0, 0, 0.19);
+	/* For IE 5.5 - 7*/
+	filter: progid : DXImageTransform.Microsoft.gradient ( startColorstr = #99000000, endColorstr = #99000000 );
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border-top-left-radius: 10px 10px;
+	border-bottom-left-radius: 10px 10px;
+	-webkit-transition: background 0.05s ease;
+	-moz-transition: background 0.05s ease;
+	-o-transition: background 0.05s ease;
+	transition: background 0.05s ease
+}
